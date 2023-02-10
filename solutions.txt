@@ -1,10 +1,10 @@
 1. SELECT *
    FROM `students`
-   WHERE YEAR (date_of_birth) = 1990
+   WHERE YEAR (date_of_birth) = 1990;
 
 2. SELECT *
    FROM `courses`
-   WHERE `cfu` > 10   
+   WHERE `cfu` > 10   ;
 
 
 
@@ -19,4 +19,9 @@
 5. SELECT *
    FROM `exams`
    WHERE `hour` BETWEEN '14:00:00' AND '23:59:59' 
-   AND `date` = '2020-06-20'
+   AND `date` = '2020-06-20';
+
+6. SELECT *
+   FROM `degrees`
+   WHERE `level` = 'magistrale';
+     
