@@ -1,0 +1,7 @@
+1. SELECT COUNT(id) as number_of_enrolment, EXTRACT(YEAR FROM `enrolment_date`) as year
+   FROM `students` 
+   GROUP BY EXTRACT(YEAR FROM `enrolment_date`);
+
+2. SELECT COUNT(id) as teachers, `office_number`
+   FROM `teachers`
+   GROUP BY `office_number`;   
