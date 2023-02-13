@@ -13,3 +13,8 @@
    FROM `course_teacher`
    JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
    WHERE `teachers`.`name` = 'fulvio';
+
+4. SELECT `students`.`degree_id`, `students`.`name`, `students`.`surname`, `degrees`.`name`
+   FROM `students`
+   JOIN `degrees` ON `students`.`degree_id`= `degrees`.`id`
+   ORDER BY  `students`.`surname` ASC;   
