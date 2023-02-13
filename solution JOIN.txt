@@ -1,0 +1,5 @@
+1. SELECT `students`.`name`,`students`.`surname`,`students`.`degree_id`, `degrees`.`name` as corso_di_laurea
+   FROM `students`
+   JOIN `degrees`
+   ON `degrees`.`department_id` = `students`.`degree_id`  
+   WHERE `degrees`.`name` = 'corso di laurea in economia';
