@@ -24,7 +24,7 @@
    FROM `degrees`
    WHERE `level` = 'magistrale';
 
-7. SELECT COUNT(*)
+7. SELECT COUNT(*) as numero_dipartimenti
    FROM `departments`;
 
 8. SELECT COUNT(*)
