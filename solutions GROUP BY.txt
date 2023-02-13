@@ -5,3 +5,11 @@
 2. SELECT COUNT(id) as teachers, `office_number`
    FROM `teachers`
    GROUP BY `office_number`;   
+
+
+
+
+
+4. SELECT COUNT(id) as numero_corsi_di_laurea, `department_id` as dipartimento
+   FROM `degrees`
+   GROUP BY `department_id`;
