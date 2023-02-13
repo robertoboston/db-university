@@ -9,4 +9,7 @@
    JOIN `departments` ON `departments`.`id`=`degrees`.`department_id`
    WHERE `degrees`.`level` = 'magistrale' AND `departments`.`name` LIKE 'dipartimento di neuroscienze';     
 
-   
+3. SELECT `course_teacher`.`course_id` as Corso, `teacher_id` as Fulvio_Amato
+   FROM `course_teacher`
+   JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+   WHERE `teachers`.`name` = 'fulvio';
