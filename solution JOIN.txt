@@ -17,4 +17,8 @@
 4. SELECT `students`.`degree_id`, `students`.`name`, `students`.`surname`, `degrees`.`name`
    FROM `students`
    JOIN `degrees` ON `students`.`degree_id`= `degrees`.`id`
-   ORDER BY  `students`.`surname` ASC;   
+   ORDER BY  `students`.`surname` ASC;  
+
+5. SELECT `degrees`.`name` as Corso_di_laurea,`courses`.`name` as Corso,`degrees`.`id`
+   FROM `degrees`
+   JOIN `courses` ON `courses`.`degree_id`=`degrees`.`id`;      
